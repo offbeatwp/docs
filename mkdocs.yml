@@ -6,6 +6,13 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      extend_pygments_lang:
+        - name: php
+          lang: php
+          options:
+            startinline: true
 theme:
   name: material
   features:
@@ -14,12 +21,12 @@ theme:
     - content.tooltips
     # - header.autohide
     # - navigation.expand
-    - navigation.indexes
+    # - navigation.indexes
     # - navigation.instant
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -27,3 +34,33 @@ theme:
     - search.suggest
     - toc.follow
     # - toc.integrate
+nav:
+  - Home: index.md
+  - Introduction:
+    - What is OffbeatWP: 'introduction/what-is-offbeatwp.md'
+    - Gettings started:
+      - Installation: 'introduction/getting-started/installation.md'
+      - Configuration: 'introduction/getting-started/configuration.md'
+      - Directory structure: 'introduction/getting-started/directory-structure.md'
+      - Deploying: 'introduction/getting-started/deploying.md'
+    - Architecture Concepts:
+      - Container: 'introduction/concepts/container.md'
+      - Services: 'introduction/concepts/services.md'
+      - Components: 'introduction/concepts/components.md'
+  - How to:
+    - The Basics: 
+      - Post Types: 'how-to/basics/post_types.md'
+      - Taxonomies: 'how-to/basics/taxonomies.md'
+      - Routing: 'how-to/basics/routing.md'
+      - Controllers: 'how-to/basics/controllers.md'
+      - Post models: 'how-to/basics/post_models.md'
+      - Term models: 'how-to/basics/term_models.md'
+      - Views: 'how-to/basics/views.md'
+      - Modules: 'how-to/basics/modules.md'
+      - Repositories: 'how-to/basics/repositories.md'
+      - Components: 'how-to/basics/components.md'
+      - Forms: 'how-to/basics/forms.md'
+      - Relationships: 'how-to/basics/relationships.md'
+      - Globals: 'how-to/basics/globals.md'
+    - Assets:
+      - Compile: 'how-to/assets/compile.md'

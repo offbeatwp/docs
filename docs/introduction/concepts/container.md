@@ -1,0 +1,42 @@
+# Container
+
+The container manages the dependencies and is performing the dependency injection. OffbeatWP uses the powerful implementation of [PHP DI](http://php-di.org/). You can find the documentation of PHP DI [here](http://php-di.org/doc/).
+
+Example:
+```php
+<?php
+namespace App\Controllers;
+
+use OffbeatWP\Controllers\AbstractController;
+use App\Repositories\PageRepository;
+
+class PagesController extends AbstractController {
+    public function actionSingle($id, PageRepository $pageRepository)
+    {
+        $post = $pageRepository->find($id);
+        echo $this->render('pages/page', ['post' => $post]);
+    }
+}
+```
+
+In this example, the `PageController` needs to get a specific page from the database. We can use a repository to do so. So we will inject the repository, the container will do this automatically. This is extremely useful in case of unit testing. When running a test we easily can swap the repository by a dummy implementation and run that method with dummy data.
+
+
+## Binding
+
+To be able to inject certain classes you need to bind them. You need to do this in a [service](services.md). You can easily do this by filling the bindings parameters in the service like this:
+
+```php
+<?php
+namespace OffbeatWP\AcfSiteSettings;
+
+use OffbeatWP\Services\AbstractService;
+use OffbeatWP\Contracts\SiteSettings as SiteSettingsContract;
+
+class Service extends AbstractService {
+    public $bindings = [
+        SiteSettingsContract::class => SiteSettings::class
+    ];
+}
+```
+
