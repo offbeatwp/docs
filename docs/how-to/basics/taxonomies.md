@@ -100,6 +100,39 @@ showAdminColumn($showAdminColumn = true)
 metaBox($metaboxCallback)
 ```
 
+```php
+capabilities(array $capabilities = [])
+```
+
+```php
+hierarchyDepth(int $depth)
+```
+
+```php
+showNavMenus(bool $show = true)
+```
+
+```php
+showTagCloud(bool $show = true)
+```
+
+```php
+hideMetaBox(bool $showAdminColumn = true)
+```
+
+```php
+useCheckboxes()
+```
+
+```php
+hideDescriptionField()
+```
+
+```php
+hideParentField()
+```
+
+
 For more information about registering taxonomies check the Wordpress documentation about [register_taxonomy](https://codex.wordpress.org/Function_Reference/register_taxonomy)
 
 

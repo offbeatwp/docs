@@ -79,6 +79,10 @@ model($modelClass)
 ```
 
 ```php
+isHierarchical($hierarchical = true)
+```
+
+```php
 supports($support)
 ```
 
@@ -114,6 +118,27 @@ inRest($showInRest = true)
 position($position = null)
 ```
 
+```php
+taxonomies(array $taxonomies)
+```
+
+
 For more information about register post type check the Wordpress documentation about [register_post_type](https://codex.wordpress.org/Function_Reference/register_post_type)
 
+## Add admin columns for post type
 
+### Static column
+
+```php
+addAdminTableColumn(string $name, string $label, string $modelFunc)
+```
+
+The `$modelFunc` should contain the function / method name from within the model. The return value of that method  will be displayed in the column.
+
+### Sortable column based on meta
+
+Easily add a sortabke column to the admin table based on a specific meta value.
+
+```php
+addAdminMetaColumn(string $metaName, string $label = '', string $orderBy = 'meta_value')
+```
