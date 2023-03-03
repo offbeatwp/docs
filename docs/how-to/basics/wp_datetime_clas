@@ -1,0 +1,18 @@
+# WpDateTime Classes
+Offbeat has a WpDateTime and WpDateTimeImmitable class. These extend the DateTime and DateTimeImmutable PHP classes.
+
+## Default Timezone
+By default, the WpDateTime classes uses the website's timezone rather than UTC.
+
+## Error Handling
+The DateTime and DateTimeImmuteable classes were introduced before PHP had proper error handling implemented.
+As such, some methods will return FALSE when called incorrectly.
+The WpDateTime class will throw an Exception if a method such as DateTime->modify is called incorrectly.
+
+## Date Formatting
+WpDateTime->i18n(string $format = ''): string
+The i18n method will return the formatted date, in the same way that calling wp_date would.
+It uses the format defined in Wordpress' read-settings, but you can specify a different format in the first parameter.
+
+## Helper Methods
+WpDateTime has several helpful get/set methods to make it easier to adjust the date.
