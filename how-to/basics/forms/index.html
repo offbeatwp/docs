@@ -1,0 +1,1507 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../components/">
+      
+      
+        <link rel="next" href="../relationships/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.0">
+    
+    
+      
+        <title>Forms - OffbeatWP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.402914a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#forms" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="OffbeatWP" class="md-header__button md-logo" aria-label="OffbeatWP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OffbeatWP
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Forms
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../introduction/what-is-offbeatwp/" class="md-tabs__link">
+        Introduction
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../post_types/" class="md-tabs__link md-tabs__link--active">
+        How to
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="OffbeatWP" class="md-nav__button md-logo" aria-label="OffbeatWP" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    OffbeatWP
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Introduction
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduction/what-is-offbeatwp/" class="md-nav__link">
+        What is OffbeatWP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          Gettings started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Gettings started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduction/getting-started/installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduction/getting-started/configuration/" class="md-nav__link">
+        Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduction/getting-started/directory-structure/" class="md-nav__link">
+        Directory structure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduction/getting-started/deploying/" class="md-nav__link">
+        Deploying
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          Architecture Concepts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Architecture Concepts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduction/concepts/container/" class="md-nav__link">
+        Container
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduction/concepts/services/" class="md-nav__link">
+        Services
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introduction/concepts/components/" class="md-nav__link">
+        Components
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          How to
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          How to
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          The Basics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          The Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../post_types/" class="md-nav__link">
+        Post Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../taxonomies/" class="md-nav__link">
+        Taxonomies
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routing/" class="md-nav__link">
+        Routing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controllers/" class="md-nav__link">
+        Controllers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../post_models/" class="md-nav__link">
+        Post models
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../term_models/" class="md-nav__link">
+        Term models
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../views/" class="md-nav__link">
+        Views
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../repositories/" class="md-nav__link">
+        Repositories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/" class="md-nav__link">
+        Components
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Forms
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Forms
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#form-structure" class="md-nav__link">
+    Form Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    Fields
+  </a>
+  
+    <nav class="md-nav" aria-label="Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    Text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textarea" class="md-nav__link">
+    Textarea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editor" class="md-nav__link">
+    Editor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    Select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image" class="md-nav__link">
+    Image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#truefalse" class="md-nav__link">
+    TrueFalse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post" class="md-nav__link">
+    Post
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posts" class="md-nav__link">
+    Posts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#term" class="md-nav__link">
+    Term
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    Terms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navmenu" class="md-nav__link">
+    NavMenu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    Breakpoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textalign" class="md-nav__link">
+    TextAlign
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontalalign" class="md-nav__link">
+    HorizontalAlign
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vericalalign" class="md-nav__link">
+    VericalAlign
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-your-own-fields" class="md-nav__link">
+    Creating your own fields
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-collections" class="md-nav__link">
+    Field Collections
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Collections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#heading" class="md-nav__link">
+    Heading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link" class="md-nav__link">
+    Link
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-your-own-collections" class="md-nav__link">
+    Defining your own Collections
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-a-form-being-used-within-a-component" class="md-nav__link">
+    Example of a form being used within a component
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relationships/" class="md-nav__link">
+        Relationships
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../globals/" class="md-nav__link">
+        Globals
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          Assets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Assets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assets/compile/" class="md-nav__link">
+        Compile
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#form-structure" class="md-nav__link">
+    Form Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    Fields
+  </a>
+  
+    <nav class="md-nav" aria-label="Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    Text
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textarea" class="md-nav__link">
+    Textarea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editor" class="md-nav__link">
+    Editor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    Select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image" class="md-nav__link">
+    Image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#truefalse" class="md-nav__link">
+    TrueFalse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post" class="md-nav__link">
+    Post
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#posts" class="md-nav__link">
+    Posts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#term" class="md-nav__link">
+    Term
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    Terms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navmenu" class="md-nav__link">
+    NavMenu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breakpoints" class="md-nav__link">
+    Breakpoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textalign" class="md-nav__link">
+    TextAlign
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontalalign" class="md-nav__link">
+    HorizontalAlign
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vericalalign" class="md-nav__link">
+    VericalAlign
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-your-own-fields" class="md-nav__link">
+    Creating your own fields
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#field-collections" class="md-nav__link">
+    Field Collections
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Collections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#heading" class="md-nav__link">
+    Heading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link" class="md-nav__link">
+    Link
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-your-own-collections" class="md-nav__link">
+    Defining your own Collections
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-a-form-being-used-within-a-component" class="md-nav__link">
+    Example of a form being used within a component
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="forms">Forms</h1>
+<p>The <code>\OffbeatWP\Form\Form</code> is an abstract implementation that can be mapped to the right structure depending on the implementation you're using. The forms are currently used for Components and SiteSettings. </p>
+<h2 id="form-structure">Form Structure</h2>
+<p>The current structure of a form is like this:
+<div class="highlight"><pre><span></span><code>- Form
+    - Tab
+        - Section
+            - Field
+        - Repeater
+            - Field
+</code></pre></div></p>
+<p>The use of tabs in a Component context is mandatory, but for SiteSettings, it isn't. A Section is not mandatory but really helps to structure your fields.</p>
+<p>A more advanced example of a form:
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Form</span><span class="p">();</span>
+
+<span class="nv">$columnsField</span> <span class="o">=</span> <span class="nx">Select</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="s1">&#39;title2&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">);</span>
+<span class="nv">$columnsField</span><span class="o">-&gt;</span><span class="na">addOptions</span><span class="p">([</span><span class="s1">&#39;2&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;4&#39;</span><span class="p">])</span>
+
+<span class="nv">$form</span>
+    <span class="o">-&gt;</span><span class="na">addTab</span><span class="p">(</span><span class="s1">&#39;general&#39;</span><span class="p">,</span> <span class="s1">&#39;General&#39;</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">addSection</span><span class="p">(</span><span class="s1">&#39;general&#39;</span><span class="p">,</span> <span class="s1">&#39;General&#39;</span><span class="p">)</span>
+            <span class="o">-&gt;</span><span class="na">addField</span><span class="p">(</span><span class="nx">Text</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">))</span>
+            <span class="o">-&gt;</span><span class="na">addField</span><span class="p">(</span><span class="nx">Editor</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="s1">&#39;content&#39;</span><span class="p">,</span> <span class="s1">&#39;Content&#39;</span><span class="p">))</span>
+    <span class="o">-&gt;</span><span class="na">addTab</span><span class="p">(</span><span class="s1">&#39;Appearance&#39;</span><span class="p">,</span> <span class="s1">&#39;Appearance&#39;</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">addSection</span><span class="p">(</span><span class="s1">&#39;appearance&#39;</span><span class="p">,</span> <span class="s1">&#39;Appearance&#39;</span><span class="p">)</span>
+            <span class="o">-&gt;</span><span class="na">addField</span><span class="p">(</span><span class="nv">$columnsField</span><span class="p">)</span>
+        <span class="o">-&gt;</span><span class="na">addRepeater</span><span class="p">(</span><span class="s1">&#39;pros_list&#39;</span><span class="p">,</span> <span class="s1">&#39;Pro list&#39;</span><span class="p">)</span>
+            <span class="o">-&gt;</span><span class="na">addField</span><span class="p">(</span><span class="nx">Text</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="s1">&#39;pro&#39;</span><span class="p">,</span> <span class="s1">&#39;Pro&#39;</span><span class="p">));</span>
+</code></pre></div></p>
+<h2 id="fields">Fields</h2>
+<p>Below the fields that are currently been integrated:</p>
+<h3 id="text">Text</h3>
+<div class="highlight"><pre><span></span><code><span class="nx">Text</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="textarea">Textarea</h3>
+<div class="highlight"><pre><span></span><code><span class="nx">TextArea</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="editor">Editor</h3>
+<div class="highlight"><pre><span></span><code><span class="nx">Editor</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="select">Select</h3>
+<p>The selected value will be returned as a string.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Select</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$value</span><span class="p">,</span> <span class="nv">$label</span><span class="p">)</span>
+</code></pre></div>
+<p>To define options you can first construct the field and then assign the options:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$selectField</span> <span class="o">=</span> <span class="nx">Select</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+<span class="nv">$selectField</span><span class="o">-&gt;</span><span class="na">addOptions</span><span class="p">([</span><span class="s1">&#39;fieldValue&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Field Label&#39;</span><span class="p">]);</span>
+
+<span class="c1">// or add single option:</span>
+<span class="nv">$selectField</span><span class="o">-&gt;</span><span class="na">addOption</span><span class="p">(</span><span class="s1">&#39;fieldValue&#39;</span><span class="p">,</span> <span class="s1">&#39;Field Label&#39;</span><span class="p">]);</span>
+</code></pre></div>
+<p>Or chain it:
+<div class="highlight"><pre><span></span><code><span class="nv">$selectField</span> <span class="o">=</span> <span class="nx">Select</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">addOptions</span><span class="p">([</span><span class="s1">&#39;fieldValue&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Field Label&#39;</span><span class="p">]);</span>
+</code></pre></div></p>
+<h3 id="image">Image</h3>
+<div class="highlight"><pre><span></span><code><span class="nx">Image</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="truefalse">TrueFalse</h3>
+<div class="highlight"><pre><span></span><code><span class="nx">TrueFalse</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="post">Post</h3>
+<p>Selecting a post</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$postField</span> <span class="o">=</span> <span class="nx">Post</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+
+<span class="c1">// if you only want from specific post types</span>
+<span class="nv">$postField</span><span class="o">-&gt;</span><span class="na">fromPostTypes</span><span class="p">([</span><span class="s1">&#39;post&#39;</span><span class="p">]);</span>
+</code></pre></div>
+<h3 id="posts">Posts</h3>
+<p>Selecting multiple posts</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$postsField</span> <span class="o">=</span> <span class="nx">Posts</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+
+<span class="c1">// if you only want from specific post types</span>
+<span class="nv">$postsField</span><span class="o">-&gt;</span><span class="na">fromPostTypes</span><span class="p">([</span><span class="s1">&#39;post&#39;</span><span class="p">]);</span>
+</code></pre></div>
+<h3 id="term">Term</h3>
+<p>Selecting a term</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$termField</span> <span class="o">=</span> <span class="nx">Term</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+
+<span class="c1">// if you only want from specific taxonomies</span>
+<span class="nv">$termField</span><span class="o">-&gt;</span><span class="na">fromTaxonomies</span><span class="p">([</span><span class="s1">&#39;post&#39;</span><span class="p">]);</span>
+</code></pre></div>
+<h3 id="terms">Terms</h3>
+<p>Selecting multiple terms</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$termsField</span> <span class="o">=</span> <span class="nx">Terms</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+
+<span class="c1">// if you only want from specific taxonomies</span>
+<span class="nv">$termsField</span><span class="o">-&gt;</span><span class="na">fromTaxonomies</span><span class="p">([</span><span class="s1">&#39;post&#39;</span><span class="p">]);</span>
+</code></pre></div>
+<h3 id="navmenu">NavMenu</h3>
+<p>Selecting a nav menu</p>
+<div class="highlight"><pre><span></span><code><span class="nx">NavMenu</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="user">User</h3>
+<p>Selecting a user</p>
+<div class="highlight"><pre><span></span><code><span class="nx">User</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="users">Users</h3>
+<p>Selecting multiple users</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Users</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="breakpoints">Breakpoints</h3>
+<p>Selecting one of the default bootstrap breakpoints</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Breakpoint</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="textalign">TextAlign</h3>
+<p>Select box with text-align options</p>
+<div class="highlight"><pre><span></span><code><span class="nx">TextAlign</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="horizontalalign">HorizontalAlign</h3>
+<p>Select box with horizontal align options</p>
+<div class="highlight"><pre><span></span><code><span class="nx">HorizontalAlign</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="vericalalign">VericalAlign</h3>
+<p>Select box with vertical-align options</p>
+<div class="highlight"><pre><span></span><code><span class="nx">VericalAlign</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">);</span>
+</code></pre></div>
+<h2 id="creating-your-own-fields">Creating your own fields</h2>
+<p>In some cases, it could be interesting to create your own fields by extending OffbeatWP Fields so you can re-use them. The right place to this is in an <code>app/Form/Fields</code> folder from the root of your theme.</p>
+<p>If for example, you want to have a field to define a rating create a file named <code>Rating.php</code> in your <code>app/Form/Fields</code> directory, containing:</p>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;?</span><span class="nx">php</span>
+<span class="k">namespace</span> <span class="nx">App\Form\Fields</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nx">\OffbeatWP\Form\Fields\Select</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">Rating</span> <span class="k">extends</span> <span class="nx">Select</span> <span class="p">{</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
+    <span class="p">{</span>        
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">addOptions</span><span class="p">([</span>
+            <span class="s1">&#39;&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;No Rating&#39;</span><span class="p">,</span> <span class="s1">&#39;offbeatwp&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;1&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;No Way&#39;</span><span class="p">,</span> <span class="s1">&#39;offbeatwp&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;2&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Mwah&#39;</span><span class="p">,</span> <span class="s1">&#39;offbeatwp&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;3&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;It\&#39;s ok&#39;</span><span class="p">,</span> <span class="s1">&#39;offbeatwp&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;4&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Pretty awesome actually&#39;</span><span class="p">,</span> <span class="s1">&#39;offbeatwp&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;5&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Awesomsaus&#39;</span><span class="p">,</span> <span class="s1">&#39;offbeatwp&#39;</span><span class="p">),</span>
+        <span class="p">]);</span>
+
+        <span class="k">parent</span><span class="o">::</span><span class="na">__construct</span><span class="p">();</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<p>Within the form you do:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;.......-&gt;</span><span class="nx">addField</span><span class="p">(</span><span class="nx">Rating</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$id</span><span class="p">,</span> <span class="nv">$label</span><span class="p">))</span>
+</code></pre></div>
+<h2 id="field-collections">Field Collections</h2>
+<p>Field collections are a combination of fields that can be reused, current collections available:</p>
+<p>Adding a fields collection to a form must be done with the <code>-&gt;addFields</code> method.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;.......-&gt;</span><span class="nx">addFields</span><span class="p">(</span><span class="nx">Heading</span><span class="o">::</span><span class="na">make</span><span class="p">())</span>
+</code></pre></div>
+<h3 id="heading">Heading</h3>
+<p>The heading fields collection automatically adds the following fields to your form:
+- Title (text field)
+- Heading Type (select box is h1-h6)
+- Heading Style (select box is h1-h6)</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Heading</span><span class="o">::</span><span class="na">make</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="link">Link</h3>
+<p>The Link fields collection automatically adds the following fields to your form:
+- Link label (text field)
+- Link url (text field)
+- Link target (selectbox is _blank, _self, _top)</p>
+<div class="highlight"><pre><span></span><code><span class="nx">Link</span><span class="o">::</span><span class="na">make</span><span class="p">();</span>
+</code></pre></div>
+<h2 id="defining-your-own-collections">Defining your own Collections</h2>
+<p>In some cases, it could be interesting to create your own fields collection so you can reuse them. The right place to this is in an <code>app/Form/FieldsCollections</code> folder from the root of your theme.</p>
+<div class="highlight"><pre><span></span><code><span class="k">namespace</span> <span class="nx">App\Form\FieldsCollections</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nx">\OffbeatWP\Form\FieldsCollections\AbstractFieldsCollection</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">\OffbeatWP\Form\Fields\Text</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">SocialLinks</span> <span class="k">extends</span> <span class="nx">AbstractFieldsCollection</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">addField</span><span class="p">(</span><span class="nx">Text</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="s1">&#39;facebook_link&#39;</span><span class="p">,</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Facebook link&#39;</span><span class="p">,</span> <span class="s1">&#39;offbeatwp&#39;</span><span class="p">)));</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">addField</span><span class="p">(</span><span class="nx">Text</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="s1">&#39;instagram_link&#39;</span><span class="p">,</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Instagram link&#39;</span><span class="p">,</span> <span class="s1">&#39;offbeatwp&#39;</span><span class="p">)));</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">addField</span><span class="p">(</span><span class="nx">Text</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="s1">&#39;twitter_link&#39;</span><span class="p">,</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Twitter link&#39;</span><span class="p">,</span> <span class="s1">&#39;offbeatwp&#39;</span><span class="p">)));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>To use this within the form:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$form</span><span class="o">-&gt;.......-&gt;</span><span class="nx">addFields</span><span class="p">(</span><span class="nx">SocialLinks</span><span class="o">::</span><span class="na">make</span><span class="p">())</span>
+</code></pre></div>
+<h2 id="example-of-a-form-being-used-within-a-component">Example of a form being used within a component</h2>
+<p>In this example, we want the user to be able to select a 'Person' which is a custom post type.
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">PersonCard</span> <span class="k">extends</span> <span class="nx">AbstractComponent</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">settings</span><span class="p">()</span><span class="o">:</span> <span class="k">array</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="p">[</span>
+            <span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Person Card&#39;</span><span class="p">,</span> <span class="s1">&#39;offbeatwp&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;slug&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;person-card&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;supports&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">&#39;pagebuilder&#39;</span><span class="p">,</span> <span class="s1">&#39;editor&#39;</span><span class="p">]</span>
+        <span class="p">];</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">getForm</span><span class="p">()</span><span class="o">:</span> <span class="nx">Form</span> <span class="p">{</span>
+        <span class="nv">$form</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Form</span><span class="p">();</span>
+
+        <span class="nv">$form</span><span class="o">-&gt;</span><span class="na">addField</span><span class="p">(</span><span class="nx">Post</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="s1">&#39;personId&#39;</span><span class="p">,</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="s1">&#39;raow&#39;</span><span class="p">))</span><span class="o">-&gt;</span><span class="na">fromPostTypes</span><span class="p">([</span><span class="nx">PersonModel</span><span class="o">::</span><span class="na">POST_TYPE</span><span class="p">]));</span>
+
+        <span class="k">return</span> <span class="nv">$form</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">render</span><span class="p">(</span><span class="nv">$settings</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;person-card&#39;</span><span class="p">,</span> <span class="p">[</span>
+            <span class="s1">&#39;settings&#39;</span> <span class="o">=&gt;</span> <span class="nv">$settings</span><span class="p">,</span> 
+            <span class="s1">&#39;person&#39;</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">PersonModel</span><span class="p">(</span><span class="nv">$settings</span><span class="o">-&gt;</span><span class="na">personId</span><span class="p">)</span>
+        <span class="p">]);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ce72ebac.min.js"></script>
+      
+    
+  </body>
+</html>
