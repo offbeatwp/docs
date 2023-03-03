@@ -1,9 +1,9 @@
-# Post Models
+# Models
 
 Models are one of the cool features of OffbeatWP. It makes "The Loop" obsolete and gives a much more intuitive way of getting data from a post or term like the title, content or url.
 
 OffbeatWP has three important types of models:
-1. Post models 
+1. [Post Models](post_models.md)
     A post model represents a post in a specific post type
 2. [Term Models](term_models.md)
     A term model represents a term in a specific taxonomy
